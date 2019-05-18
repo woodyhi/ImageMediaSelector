@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.woodyhi.imageselector">
+
+    <application>
+        <provider
+            android:name="com.woodyhi.imageselector.ImageSelectorProvider"
+            android:authorities="${applicationId}.image.selector"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_selector_path" />
+        </provider>
+    </application>
+</manifest>
